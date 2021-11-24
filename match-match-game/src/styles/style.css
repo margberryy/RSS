@@ -1,0 +1,434 @@
+@import 'roboto.css';
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+#app {
+   height: 100vh;
+   max-width: 1440px;
+}
+
+.header {
+   background-color: #2196F3;
+   height: 64px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: azure;
+   font-size: 12px;
+}
+
+.logo_wrapper {
+   width: 80px;
+   height: 40px;
+   margin: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.logo_1 {
+   height: 20px;
+}
+
+.logo_2 {
+   height: 20px;
+   background-color: azure;
+   color: #2196F3;
+}
+
+.menu {
+   display: flex;
+   flex-direction: wrap;
+}
+
+.menu__item {
+   text-decoration: none;
+   width: 96px;
+   height: 64px;
+   list-style-type: none;
+   text-align: center;
+   padding-top: 10px;
+}
+
+.menu__item.active {
+   background-color: #2085d8;
+}
+
+.menu__item:hover {
+   background-color: #9652d19c;
+}
+
+.menu__item__icon {
+   width: 20px;
+   height: 20px;
+}
+
+.menu__item__link {
+   height: 30px;
+   display: block;
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+}
+
+.btn {
+   width: 207px;
+   height: 36px;
+   background-color: white;
+   align-self: center;
+   color: #2196F3;
+   border-radius: 5px;
+   border: none;
+   text-decoration: none;
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: rgb(219, 233, 245);
+}
+
+/*main about game*/
+
+.main {
+   width: 1000px;
+   height: 80vh;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(235, 242, 243);
+}
+
+.title {
+   width: 780px;
+   font-style: bold;
+   font-size: 20px;
+}
+
+.title__about_game {
+   margin: 10px auto;
+}
+
+.step_container {
+   width: 780px;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.step_wrapper {
+   background-color: white;
+   width: 360px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 16px;
+}
+
+.step_num {
+   color: white;
+   background-color: #2196F3;
+   font-size: 24px;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   padding-top: 6px;
+}
+
+.step_text {
+   width: 272px;
+}
+
+/*main settings*/
+
+.container_settings {
+   height: 252px;
+   display: block;
+   background-color: white;
+   box-shadow: 0px 4px 4px 0px #00000040;
+   margin-top: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.settings {
+   display: flex;
+   flex-direction: column;
+   width: 256px;
+   justify-content: space-around;
+   height: 50%;
+   margin: 32px 46px 20px;
+   border-bottom: 1px solid rgb(211, 218, 218);
+   padding-bottom: 10px;
+}
+
+.settings__value_wrapper {
+   border: none;
+   color: #00000099;
+}
+
+.settings__value {
+   color: #00000099;
+}
+
+/*score*/
+
+.title__score {
+   margin: 48px auto 0;
+}
+
+.player_wrapper {
+   margin: 24px 56px 0;
+}
+
+.player {
+   width: 846px;
+   height: 45px;
+   display: flex;
+   border-bottom: 1px solid rgb(211, 218, 218);
+   margin-bottom: 18px;
+}
+
+.player_img {
+   width: 40px;
+   height: 40px;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-right: 18px;
+}
+
+.player_email {
+   color: #333333;
+}
+
+/*game*/
+
+.timer {
+   font-size: 30px;
+   text-align: center;
+   width: 240px;
+   height: 50px;
+   background-color: white;
+   box-shadow: 0 5px 5px rgba(133, 132, 132, 0.5);
+   align-self: center;
+   color: #333333;
+   margin: 15px auto 0;
+   padding-top: 10px;
+}
+
+.cards_wrapper {
+   width: 75%;
+   height: 100%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin: auto;
+}
+
+.card_container {
+   position: relative;
+   margin: 5px;
+   perspective: 15rem;
+   display: flex;
+   align-items: center;
+   perspective: 15rem;
+}
+
+.card {
+   width: 150px;
+   height: 150px;
+   transform-style: preserve-3d;
+   transition: all 1s;
+}
+
+.card.flipped {
+   transform-style: preserve-3d;
+   transform: rotateY(180deg);
+   position: relative;
+}
+
+.card_back, .card_front {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+   box-shadow: 0 5px 5px rgba(133, 132, 132, 0.5);
+   backface-visibility: hidden;
+   position: absolute;
+}
+
+.card_back {
+   background: url('../assets/background-card.png');
+}
+
+.card_front {
+   background-size: contain;
+   transform: rotateY(180deg);
+   background-blend-mode: overlay;
+}
+
+.card_front.guessed {
+   background-color: #4fe45b62;
+}
+
+.card_front.error {
+   background-color: #ff000054;
+}
+
+/*formRegistration*/
+
+.form {
+ 
+   width: 639px;
+   height: 460px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 5px 5px rgba(133, 132, 132, 0.5);
+   position: fixed;
+   top: 50%;
+   margin-top: calc(-460px/2);
+   left: 50%;
+   transition: 100ms ease-in-out;
+   margin-left: calc(-630px/2);
+   background-color: white;
+   z-index: 4;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   visibility: visible;
+}
+
+.form__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.form__container {
+   width: 328px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.form__item {
+   height: 56px;
+   position: relative;
+   border-radius: 5px;
+   border-bottom: 1px solid #bcdbf7d5;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.form__item_label {
+   position: absolute;
+   top: 5px;
+   left: 20px;
+   font-style: 12px;
+   line-height: 16px;
+   letter-spacing: 0.4px;
+   color: rgba(0, 0, 0, 0.38);
+}
+
+.form__item_input, ._email {
+   height: 56px;
+   padding: 15px 20px 0;
+   border: none;
+   border-radius: 5px;
+   background-color: #f0f3dcb9;
+   font-size: 16px;
+   text-transform: capitalize;
+   line-height: 24px;
+   letter-spacing: 0.15px;
+   color: rgba(0, 0, 0, 0.87);
+   outline: none;
+}
+._email{
+   text-transform: none;
+}
+.tooltip {
+  visibility: hidden;
+  width: max-content;
+  max-width:250px;
+  vertical-align: middle;
+   height: 56px;
+   background-color: #ffffff;
+   border: 1px solid rgb(150, 148, 148);
+   color: rgb(99, 98, 79);
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px;
+   position: absolute;
+   z-index: 1;
+   left: 103%;
+}
+
+.form__item_input:focus {
+   box-shadow: 0 0 20px #95c1e5;
+}
+
+.form__item_input._error {
+   box-shadow: 0 0 10px #e73a3a;
+}
+
+.form__item_input._checked {
+   box-shadow: 0 0 10px #9ce73a;
+}
+
+.btn_wrapper {
+   width: 100%;
+   margin-top: 90px;
+}
+
+.btn_cancel, .btn_add-user {
+   width: 93px;
+   height: 36px;
+   box-shadow: 0 5px 5px rgba(133, 132, 132, 0.5);
+   float: right;
+   vertical-align: bottom;
+   margin-bottom: 20px;
+}
+.btn_cancel{
+   padding:12px 15px;
+}
+.btn_add-user:hover {
+   background-color: #13578f;
+}
+
+.btn_add-user {
+   color: white;
+   background-color: #2196F3;
+}
+
+/*overlay*/
+
+.overlay {
+   position: fixed;
+   opacity: 0.8;
+   transition: 200ms ease-in-out;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   pointer-events: none;
+   z-index: 3;
+}

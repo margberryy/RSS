@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"module": "commonjs",
+		"target": "es5",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"lib": [ "ES2015", "dom"]
+	},
+	"include": [
+		"src/**/*",
+		"index.d.ts"
+	]
+}
