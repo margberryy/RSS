@@ -1,0 +1,36 @@
+.category {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 5px 5px rgba(133, 132, 132, 0.5);
+    border-radius: 5px;
+    color: #14acef;
+    cursor: pointer;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0.25turn, #fcd1a3, #7fd3f8);
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+
+body.dark .category_img__wrapper {
+    background: linear-gradient(0.25turn, #ffcd42, #9f2ef4);
+}
+
+.category_img {
+    margin: 5px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.category_name {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    background-color: white;
+}
+

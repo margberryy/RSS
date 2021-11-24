@@ -1,0 +1,79 @@
+@import 'font.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Balsamiq Sans-Regular', cursive;
+    margin: 20px 50px;
+    background: radial-gradient(#7ae0ee 10%, #031f3b);
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px 10px;
+    }
+}
+
+body.dark {
+    background: radial-gradient(#f8c58e 10%, #25024e);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #087ae3;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.main {
+    flex: 1 1 auto;
+    /*margin-bottom: 20px;*/
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.logo {
+    margin: 5px;
+    width: 100px;
+}
+
+.github_logo {
+    margin: 5px;
+    width: 40px;
+}
+
+.github {
+    margin: 5px;
+    color: gray;
+}
+

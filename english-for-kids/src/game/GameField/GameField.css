@@ -1,0 +1,35 @@
+.btn_start, .btn_repeat {
+
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    font-family: 'Balsamiq Sans-Bold', serif;
+    font-size: 30px;
+    background-color: #efef49;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn_start:hover, .btn_repeat {
+    background-color: #b8b838;
+
+}
+
+.btn_repeat {
+    display: none;
+}
+
+.count_errors {
+    color: white;
+    font-size: 65px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+}
+
+.img_fail {
+    width: 500px;
+    height: 500px;
+}
+
