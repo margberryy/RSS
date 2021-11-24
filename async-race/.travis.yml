@@ -1,0 +1,36 @@
+dist: trusty
+
+os: linux
+
+services:
+  - xvfb
+
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_failure: change
+
+node_js:
+  - '15.3.0'
+
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - npm i -g npm@7.0.14
+  - npm install
+
+before_script:
+  - npm prune
+  - export DISPLAY=:99.0
+
+script:
+  - npm run build.prod
+  - npm run test

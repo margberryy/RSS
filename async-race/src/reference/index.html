@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Async Race</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+<header class="header">
+    <button class="btn btn_to-garage">to garage</button>
+    <button class="btn btn_to-winners">to winners</button>
+</header>
+<div class="container">
+
+    <div class="field_create_car">
+        <input type="text" placeholder="enter name car">
+        <input type="color" value="color">
+        <button class="btn create_car">create</button>
+    </div>
+
+    <div class="field_change_car">
+        <input type="text">
+        <input type="color" value="color">
+        <button class="btn create_car">create</button>
+    </div>
+
+    <button class="btn btn_race">race</button>
+    <button class="btn btn_reset">reset</button>
+    <button class="btn btn_generate_cars">generate cars</button>
+    <title class="title"> garage</title>
+
+    <div class="race_field">
+        <p class="subtitle">page</p>
+        <div class="cars">
+            <div class="car"    >
+                <div class="car_edit">
+                    <button class="btn btn_select_car">select</button>
+                    <button class="btn btn_remove_car">remove</button>
+                    <div class="car_name">Mercedes</div>
+                </div>
+
+                <div class="race">
+                    <button class="btn btn_start">go</button>
+
+
+                    <svg class="car_img">
+                        <path d='M44 28l-5.5-10a3.7 3.7 0 0 0-3.1-2H11.3c-1 0-2 1-2.6 2S2.8 29 2.8 29 M56 42h6V31a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v11h6m12 0h24'
+                        ></path>
+                        <circle cx='14' cy='42' r='6'></circle>
+                        <circle cx='50' cy='42' r='6'></circle>
+                    </svg>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn_prev">prev</button>
+    <button class="btn btn_next">next</button>
+</div>
+
+</body>
+
+</html>
