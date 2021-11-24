@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="script/index.js" defer></script>
+   <title>Online zoo</title>
+</head>
+
+<body class="body">
+
+   <div class="header">
+      <div class="header__wrapper  wrapper">
+         <div class="header__container container">
+            <header class="header__menu">
+               <a href="index.html" class="header__logo-link">
+                  <img src="assets/icons/logo.svg" alt="Online-zoo" class="header__logo-pic">
+                  <h1>Online zoo</h1>
+               </a>
+
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <nav class="header__nav">
+                  <ul class="header__list">
+                     <li class="header__iteme">
+                        <a href="index.html" class="header__link_active">About</a>
+                     </li>
+                     <li class="header__iteme ">
+                        <a href="map.html" class="header__link">Map</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="panda.html" class="header__link" id="header__link__sign">Zoos</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="error.html" class="header__link">Contact us</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1"
+                           class="header__link" id="header__link__sign">Design</a>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+
+            <div class="favoriteAnimal">
+               <p class="favoriteAnimal__text">Watch your favorite animal ONLINE</p>
+               <a href="panda.html"><button class="favoriteAnimal__btn__play btn"><img src="assets/icons/play.svg">
+                     Play</button></a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main class="main">
+      <div class="wrapper">
+         <div class="main__container">
+            <div class="main__title title">How it works</div>
+            <div class="main__animals">
+               <ul class="main__list">
+                  <li class="main__iteme main__iteme_eagle " data-pos="-2"><img src="assets/images/eagle.png"
+                        class="main__iteme__img eagle" alt="eagle">
+                  </li>
+                  <li class="main__iteme main__iteme_tiger"data-pos="-1"><img src="assets/images/tiger.png"
+                        class="main__iteme__img tiger" alt="tiger">
+                  </li>
+                  <li class="main__iteme main__iteme_panda"data-pos="0"><img src="assets/images/panda.png"
+                        class="main__iteme__img panda" alt="panda">
+                  </li>
+                  <li class="main__iteme main__iteme_monkey"data-pos="1"><img src="assets/images/monkey.png"
+                        class="main__iteme__img monkey" alt="monkey"></li>
+                  <li class="main__iteme main__iteme_elefant"data-pos="2"><img src="assets/images/elefant.png"
+                        class="main__iteme__img elefant" alt="elefant"></li>
+               </ul>
+            </div>
+            <div class="main__subtitle subtitle">
+               The application Оnline zoo will allow you to watch zoos' and nature reserves' inhabitants in live.
+               Currently, under video-surveillance are pandas in China, eagles on Catalina Island (USA), alligators in
+               Florida and gorillas in the Congo. We are expanding our capabilities and soon online you will meet Arctic
+               snowy owl in Alaska, Penguin in California, Elephant from South Africa and Polar bear from Canada. You
+               will see unique video-shots at any time of the day. If you liked a pet you watch and you want to please
+               it with a delicious treat, you can pay a donation and the animal will receive a surprise from you during
+               feeding hours.
+               <br /> We want to thank you for helping the animals and give you <a href=""
+                  class="main__subtitle__link">discount
+                  coupons</a> from our partners.
+            </div>
+         </div>
+         <div class="pets">
+            <div class="pets_container container">
+               <div class="pets_wrapper">
+                  <div class="pets__title title">Pets in zoo</div>
+                  <div class="pets__slider">
+                     <div class="slider__btn left">
+                        <button class="slider__btn__left"><img src="assets/images/Arrow_left.png"
+                              alt="arrow left"></button>
+                     </div>
+                     <div class="pets__collection">
+                        <div class="pets__collection__container">
+                           <div class="pets__itemes__container">
+                              <div class="pets__iteme">
+                                 <a href="panda.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_panda.png" alt="panda"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_bear.png" alt="bear"></a>
+                              </div>
+                              <div class="pets__iteme">
+                                 <a href="aligator.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_alligator.png" alt="alligator"></a>
+                                 <a href="eagle.html"><img class="pets__iteme__img" src="assets/images/slider_eagle.png"
+                                       alt="eagle"></a>
+                              </div>
+                              <div class="pets__iteme last_320">
+                                 <a href="gorilla.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_gorilla.png" alt="gorilla"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_owl.png" alt="owl"></a>
+                              </div>
+                              <div class="pets__iteme last">
+                                 <a><img class="pets__iteme__img1" src="assets/images/slider_elephant.png"
+                                       alt="elephant"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_penguin.png"
+                                       alt="penguin"></a>
+                              </div>
+                           </div>
+
+                           <div class="pets__itemes__container">
+                              <div class="pets__iteme">
+                                 <a href="panda.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_panda.png" alt="panda"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_bear.png" alt="bear"></a>
+                              </div>
+                              <div class="pets__iteme">
+                                 <a href="aligator.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_alligator.png" alt="alligator"></a>
+                                 <a href="eagle.html"><img class="pets__iteme__img" src="assets/images/slider_eagle.png"
+                                       alt="eagle"></a>
+                              </div>
+                              <div class="pets__iteme last_320">
+                                 <a href="gorilla.html"><img class="pets__iteme__img1"
+                                       src="assets/images/slider_gorilla.png" alt="gorilla"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_owl.png" alt="owl"></a>
+                              </div>
+                              <div class="pets__iteme last">
+                                 <a><img class="pets__iteme__img1" src="assets/images/slider_elephant.png"
+                                       alt="elephant"></a>
+                                 <a><img class="pets__iteme__img" src="assets/images/slider_penguin.png"
+                                       alt="penguin"></a>
+                              </div>
+                           </div>
+                     
+
+                        </div>
+
+
+                     </div>
+                     <div class="slider__btn right">
+                        <button class="slider__btn__right "><img src="assets/images/arrow_right.png" alt="arrow right">
+                        </button>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="pets__btn">
+                  <a href="map.html">
+                     <button class="choose__btn btn"> Choose your favorite</button>
+                  </a>
+               </div>
+
+            </div>
+         </div>
+         <div class="donation">
+            <div class="donation__container container">
+               <div class="donation__title title">Pay and feed</div>
+
+               <div class="donation__img">
+                  <img class="img" src="assets/images/Instruction_step1.png" alt="Pay">
+                  <img class="img img_640" src="assets/images/Instruction_step1_640.png" alt="Pay">
+                  <img class="img_320" src="assets/images/Instruction_arrow_down_320.png" alt="arrow">
+                  <img class="img_arrows" src="assets/images/Instruction_arrows.png" alt="arrows">
+                  <img class="img_arrows img_arrows_down" src="assets/images/Instruction_arrows640.png" alt="arrows">
+
+                  <img class="img" src="assets/images/Instruction_step2.png" alt="Pay">
+                  <img class="img img_640" src="assets/images/Instruction_step2_640.png" alt="Pay">
+
+                  <img class="img_320" src="assets/images/Instruction_arrow_down_320.png" alt="arrow">
+
+                  <img class="img" src="assets/images/Instruction_step3.png" alt="Pay">
+                  <img class="img img_640" src="assets/images/Instruction_step3_640.png" alt="Pay">
+               </div>
+
+            </div>
+         </div>
+         <div class="testimonials">
+            <div class="testimonials__container container">
+               <div class="testimonials__title title">Testimonials</div>
+               <div class="testimonials__slider">
+                  <div class="slider__btn">
+                     <button class="slider__btn__left">
+                        <img src="assets/images/Arrow_left.png" alt="arrow left">
+                     </button>
+                  </div>
+
+                  <div class="testimonials__collection">
+
+                     <div class="testimonials__iteme">
+                        <div class="testimonial__title">
+                           <img class="testimonial__title__img" src="assets/images/karen.png" alt="photo">
+                           <div class="testimonial__person">
+                              <p class="testimonial__name">Karen Maitland</p>
+                              <div class="testimonial__donate">
+                                 <img src="assets/images/money.png" alt="money"> +$10
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonial_text">
+                           "Thank you so much for these wonderful live webcams of the eagles on Catalina Island.
+                           Being able to watch them in their natural habitat as opposed to zoos is so wonderful.
+                           I cannot see myself ever being able to come up there to see them in person, so this is a
+                           great
+                           substitute.
+                           Thank you again."
+                        </div>
+                     </div>
+                     <div class="testimonials__iteme">
+                        <div class="testimonial__title">
+                           <img class="testimonial__title__img" src="assets/images/sara.png" alt="photo">
+                           <div class="testimonial__person">
+                              <p class="testimonial__name">Sara Jones</p>
+                              <div class="testimonial__donate">
+                                 <img src="assets/images/money.png" alt="money"> +$13
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonial_text">
+                           "A disability prevents me from enjoying the outdoors and travel like I used to do.
+                           I really enjoy all the live cams and can spend HOURS watching real-time entertainment.
+                           Wild life style!"
+                        </div>
+                     </div>
+
+                     <div class="testimonials__iteme barden">
+                        <div class="testimonial__title">
+                           <img class="testimonial__title__img" src="assets/images/alex.png" alt="photo">
+                           <div class="testimonial__person">
+                              <p class="testimonial__name">Alex Barden</p>
+                              <div class="testimonial__donate">
+                                 <img src="assets/images/money.png" alt="money"> +$7
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonial_text">
+                           "Here's a huge "thank-you" from New Hampshire - you allow me to travel the world without
+                           ever
+                           leaving the comfort of my office chair. Jammies on and coffee cup in hand, I am Phineas
+                           Fogg!!"
+                        </div>
+                     </div>
+                     <div class="testimonials__iteme last">
+                        <div class="testimonial__title">
+                           <img class="testimonial__title__img" src="assets/images/alene.png" alt="photo">
+                           <div class="testimonial__person">
+                              <p class="testimonial__name">Alene Ray</p>
+                              <div class="testimonial__donate">
+                                 <img src="assets/images/money.png" alt="money"> +$18
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonial_text">
+                           "Thank you for all the knowledge, education, pleasure and happiness you have add to all
+                           our
+                           lives at no expense on our part. My humble thanks and gratitude are being wished for all
+                           of
+                           you. I want to thank you and feed the animals a small reward"
+                        </div>
+
+                     </div>
+                  </div>
+
+
+                  <div class="slider__btn">
+                     <button class="slider__btn__right "><img src="assets/images/arrow_right.png" alt="arrow right">
+                     </button>
+                  </div>
+
+               </div>
+               <div class="testimonials__leave_feadback">
+                  <span class="close_pop_up close_pop_up__feadback"></span>
+                  <form action="#" class="testimonials__leave_feadback__container">
+                     <input class="testimonial__leave_feadback name" placeholder="Name" form="data">
+                     <input class="testimonial__leave_feadback email" type="email" placeholder="Email" form="data">
+                     <textarea class="testimonial__leave_feadback feadback" rows="10" cols="45" wrap="hard"
+                        placeholder="Your text here (300 max)" maxlength="300"></textarea>
+                     <input class="testimonial__leave_feadback__submit btn" type="submit" value="Submit" form="data">
+
+                  </form>
+               </div>
+               <div class="testimonial__btn">
+                  <button class="feedback__btn btn">Leave feedback</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer class="footer">
+      <div class="footer__wrapper">
+         <div class="footer__container container">
+
+
+            <div class="footer__logo">
+               <a href="index.html" class="footer__logo-link">
+                  <img src="assets/icons/logo.svg" alt="Online-zoo" class="footer__logo-pic">
+               </a>
+            </div>
+            <div class="donate_field">
+               <form action="#" class="donate_field__container">
+                  <span class="close_pop_up close_pop_up__donate"></span>
+                  <div class="donate__menu">
+                     <ul class="donate__menu__list">
+                        <li class="donate__menu__item selected">Alligator</li>
+                        <li class="donate__menu__item ">Panda</li>
+                        <li class="donate__menu__item ">Eagle</li>
+                        <li class="donate__menu__item ">Gorilla</li>
+                     </ul>
+                  </div>
+                  <input type="text" id="amount" class="donate_field__option amount" value="" placeholder="Amount"
+                     maxlength="4" required>
+
+                  <div class="donate__currency">
+                     <ul class=" donate__currency__list ">
+                        <li class="currency__item selected">USD</li>
+                        <li class="currency__item ">EUR</li>
+                     </ul>
+                  </div>
+
+                  <textarea name="" class="donate_field__option text" placeholder="Your text here (280 max)"
+                     maxlength="280"></textarea>
+               </form>
+               <button class="donate_field__btn btn" type="submit" value="Donat" form="data">Next</button>
+            </div>
+            <div class="donate_field_pay donate_field">
+               <span class="close_pop_up close_pop_up__pay"></span>
+               <form action="#" class="donate__card font">
+                  <input type="text" id="card_number" class="donate_field_pay__option card_number"
+                     placeholder="Card Number" maxlength="16">
+                  <input type="text" id="month" class="donate_field_pay__option month" placeholder="MM" maxlength="2">
+                  <input type="text" id="year" class="donate_field_pay__option year" placeholder="YY" maxlength="2">
+                  <input type="text" id="name" class="donate_field_pay__option name" placeholder="Сardholder Name">
+               </form>
+               <form action="#" class="donate__card back">
+                  <div class="stripe magnetic_stripe"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <input type="text" id="cvc" class="donate_field_pay__option cvc" placeholder="CVC" maxlength="3">
+               </form>
+               <button class="donate_pay__btn btn" type="submit" form="data">Donate</button>
+            </div>
+            <div class="footer__btn">
+               <button class="donate__btn btn">Donate for volunteers</button>
+            </div>
+
+            <div class="footer__nav">
+               <ul class="footer__list">
+                  <li class="footer__iteme">
+                     <a href="index.html" class="footer__link">About</a>
+                  </li>
+                  <li class="footer__iteme">
+                     <a href="map.html" class="footer__link">Map</a>
+                  </li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__iteme">
+                     <a href="error.html" class="footer__link">Contact us</a>
+                  </li>
+                  <li class="footer__iteme">
+                     <a href="error.html" class="footer__link" id="footer__link__sign">Feedback</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="social_network__container">
+               <ul class="social_networks">
+                  <li class="social_network"><a href="https://www.instagram.com/?hl=ru" class="instagram_link"></a>
+                  </li>
+                  <li class="social_network"><a href="https://www.facebook.com/" class="facebook_link"></a></li>
+                  <li class="social_network"><a href="https://twitter.com/?lang=ru" class="twitter_link"></a></li>
+                  <li class="social_network"><a href="https://www.youtube.com/" class="youtube_link"></a></li>
+
+               </ul>
+            </div>
+
+            <div class="footer__logo_info">
+               <img title="Rolling Scopes School" src="assets/icons/logo_school.svg" alt="rss logo">
+               <img title="Yem Digital" src="assets/icons/logo_yem_digital.svg" alt="logo Yem Digital">
+            </div>
+
+            <div class="footer__info">
+               <p class="footer__copyright">Copyright ©RSSchool <span class="footer__copyright_and">and</span> ©Yem
+                  Digital 2020 - 2021</p>
+               <p class="footer__autor">
+                  Grigoreva Margarita
+               </p>
+            </div>
+
+
+         </div>
+
+      </div>
+   </footer>
+   <div class="overlay"></div>
+</body>
+
+
+</html>

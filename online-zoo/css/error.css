@@ -1,0 +1,81 @@
+/* bebas-neue-regular - latin */
+@font-face {
+   font-family: 'Bebas Neue';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/bebas-neue-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ 
+html, body{
+   height: 100%;
+}
+.wrapper{
+  max-width: 1920px;
+   margin: auto ;
+   height: 100%;
+}
+.container{
+   max-width: max-content;
+   height:700px;
+   margin: 197px auto 0;
+   
+ 
+}
+.container__title{
+   font-family: 'Bebas Neue', cursive;
+   color: #333333;
+   text-align: center;
+   font-size: 70px;
+   margin: 10px 0 0;
+   padding: 0;
+}
+
+.container__text{
+   text-decoration: none;
+   display: block;
+   font-family: 'Bebas Neue';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #59C3FB;
+   text-align: center;
+}
+.text:hover:hover{
+   color: #4898c4;
+}
+@media(max-width:1200px){
+   .container{
+      margin: 50px auto 0;
+    
+   }
+}
+@media(max-width:640px){
+   .container{
+      margin: 110px auto;
+    
+   }
+   .container>img{
+     width:550px;
+    
+   }
+}
+@media(max-width:320px){
+   .container{
+      margin: 140px auto;
+    
+   }
+   .container>img{
+     width:260px;
+    
+   }
+   .container__title{
+      margin: 0;
+      font-size: 40px;
+   }
+   .container__text{
+      font-size: 16px;    
+   }
+}

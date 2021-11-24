@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/map.css">
+
+   <title>Map</title>
+</head>
+
+<body class="body">
+   <div class="wrapper">
+      <div class="container">
+         <div class="header__container">
+            <header class="header__menu">
+               <a href="index.html" class="header__logo-link">
+                  <img src="assets/icons/logo.svg" alt="Online-zoo" class="header__logo-pic">
+                  <h1>Online zoo</h1>
+               </a>
+
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <nav class="header__nav">
+                  <ul class="header__list">
+                     <li class="header__iteme">
+                        <a href="index.html" class="header__link">About</a>
+                     </li>
+                     <li class="header__iteme ">
+                        <a href="map.html" class="header__link_active">Map</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="panda.html" class="header__link" id="header__link__sign">Zoos</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="error.html" class="header__link">Contact us</a>
+                     </li>
+                     <li class="header__iteme">
+                        <a href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1"
+                           class="header__link" id="header__link__sign">Design</a>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+         </div>
+         <main class="main">
+
+            <div class="img">
+               <div class="container_img">
+                  <a href="eagle.html" class="map__img eagle" data-signature="EAGLE"
+                     data-tooltip="EAGLE Calofornia, USA">
+                     <button class="buttton_tultip ">Watch online</button>
+                  </a>
+                  <a href="aligator.html" class="map__img alligator" data-signature="ALLIGATOR"
+                     data-tooltip="ALLIGATOR Florida, USA">
+                     <button class="buttton_tultip ">Watch online</button>
+                  </a>
+                  <a href="gorilla.html" class="map__img gorilla" data-signature="GORILLA"
+                     data-tooltip="GORILLA Eastern, DRC">
+                     <button class="buttton_tultip ">Watch online</button>
+                  </a>
+                  <a href="panda.html" class="map__img panda" data-signature="PANDA BEAR" data-tooltip="PANDA, China">
+                     <button class="buttton_tultip ">Watch online</button>
+                  </a>
+               </div>
+            </div>
+
+            <div class="map__btn">
+               <button class="zoom zoom_out">-</button>
+               <button class="zoom zoom_in">+</button>
+
+            </div>
+         </main>
+
+      </div>
+
+
+
+   </div>
+   <footer class="footer">
+      <div class="footer__wrapper">
+         <div class="footer__container container">
+
+
+            <div class="footer__logo">
+               <a href="index.html" class="footer__logo-link">
+                  <img src="assets/icons/logo.svg" alt="Online-zoo" class="footer__logo-pic">
+               </a>
+            </div>
+            <div class="donate_field">
+               <form action="#" class="donate_field__container">
+                  <span class="close_pop_up close_pop_up__donate"></span>
+                  <div class="donate__menu">
+                     <ul class="donate__menu__list">
+                        <li class="donate__menu__item selected">Alligator</li>
+                        <li class="donate__menu__item ">Panda</li>
+                        <li class="donate__menu__item ">Eagle</li>
+                        <li class="donate__menu__item ">Gorilla</li>
+                     </ul>
+                  </div>
+                  <input type="text" id="amount" class="donate_field__option amount" value="" placeholder="Amount"
+                     maxlength="4" required>
+
+                  <div class="donate__currency">
+                     <ul class=" donate__currency__list ">
+                        <li class="currency__item selected">USD</li>
+                        <li class="currency__item ">EUR</li>
+                     </ul>
+                  </div>
+
+                  <textarea name="" class="donate_field__option text" placeholder="Your text here (280 max)"
+                     maxlength="280"></textarea>
+               </form>
+               <button class="donate_field__btn btn" type="submit" value="Donat" form="data">Next</button>
+            </div>
+            <div class="donate_field_pay donate_field">
+               <span class="close_pop_up close_pop_up__pay"></span>
+               <form action="#" class="donate__card font">
+                  <input type="text" id="card_number" class="donate_field_pay__option card_number"
+                     placeholder="Card Number" maxlength="16">
+                  <input type="text" id="month" class="donate_field_pay__option month" placeholder="MM" maxlength="2">
+                  <input type="text" id="year" class="donate_field_pay__option year" placeholder="YY" maxlength="2">
+                  <input type="text" id="name" class="donate_field_pay__option name" placeholder="Сardholder Name">
+               </form>
+               <form action="#" class="donate__card back">
+                  <div class="stripe magnetic_stripe"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <div class="stripe stripe_item"></div>
+                  <input type="text" id="cvc" class="donate_field_pay__option cvc" placeholder="CVC" maxlength="3">
+               </form>
+               <button class="donate_pay__btn btn" type="submit" form="data">Donate</button>
+            </div>
+            <div class="footer__btn">
+               <button class="donate__btn btn">Donate for volunteers</button>
+            </div>
+
+            <div class="footer__nav">
+               <ul class="footer__list">
+                  <li class="footer__iteme">
+                     <a href="index.html" class="footer__link">About</a>
+                  </li>
+                  <li class="footer__iteme">
+                     <a href="map.html" class="footer__link">Map</a>
+                  </li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__iteme">
+                     <a href="error.html" class="footer__link">Contact us</a>
+                  </li>
+                  <li class="footer__iteme">
+                     <a href="error.html" class="footer__link" id="footer__link__sign">Feedback</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="social_network__container">
+               <ul class="social_networks">
+                  <li class="social_network"><a href="https://www.instagram.com/?hl=ru" class="instagram_link"></a>
+                  </li>
+                  <li class="social_network"><a href="https://www.facebook.com/" class="facebook_link"></a></li>
+                  <li class="social_network"><a href="https://twitter.com/?lang=ru" class="twitter_link"></a></li>
+                  <li class="social_network"><a href="https://www.youtube.com/" class="youtube_link"></a></li>
+
+               </ul>
+            </div>
+
+            <div class="footer__logo_info">
+               <img title="Rolling Scopes School" src="assets/icons/logo_school.svg" alt="rss logo">
+               <img title="Yem Digital" src="assets/icons/logo_yem_digital.svg" alt="logo Yem Digital">
+            </div>
+
+            <div class="footer__info">
+               <p class="footer__copyright">Copyright ©RSSchool <span class="footer__copyright_and">and</span> ©Yem
+                  Digital 2020 - 2021</p>
+               <p class="footer__autor">
+                  Grigoreva Margarita
+               </p>
+            </div>
+
+
+         </div>
+
+      </div>
+   </footer>
+   <div class="overlay"></div>
+   <script src="script/map.js"></script>
+</body>
+
+</html>
